@@ -28,6 +28,28 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      drawer: Drawer(
+        child: Column(
+          children: <Widget>[
+            AppBar(
+              automaticallyImplyLeading: false,
+              title: Text('Choose'),
+            ),
+            ListTile(
+              title: Text('Current Event'),
+              onTap: () {},
+            ),
+            ListTile(
+              title: Text('Calendar'),
+              onTap: () {},
+            ),
+            ListTile(
+              title: Text('Member List'),
+              onTap: () {},
+            ),
+          ],
+        ),
+      ),
       appBar: new AppBar(
         title: new Text(widget.title),
       ),
