@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './pages/homepage.dart';
+// import './pages/homepage.dart';
+import './pages/auth.dart';
 
 void main() => runApp(new MyApp());
 
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new HomePage(title: 'Club Keeper'),
+      // home: new HomePage(title: 'Club Keeper'),
+      home: AuthPage(),
     );
   }
 }
