@@ -13,14 +13,21 @@ class AuthPage extends StatelessWidget {
           children: <Widget>[
             Expanded(child: Column()),
             Text(
-              'To verify that you are indeed you, \nplease push \nthe button below.*\n',
+              'To verify that you are indeed you, \nplease carefully press \nthe button below.*\n',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
               textAlign: TextAlign.center,
             ),
-            RaisedButton(
-              color: Theme.of(context).primaryColorDark,
-              child: Text('LOGIN'),
+            RawMaterialButton(
               onPressed: () {},
+              child: new Icon(
+                Icons.fingerprint,
+                color: Colors.white,
+                size: 35.0,
+              ),
+              shape: new CircleBorder(),
+              elevation: 2.0,
+              fillColor: Theme.of(context).primaryColorDark,
+              padding: const EdgeInsets.all(15.0),
             ),
             Expanded(child: Container()),
             Padding(
