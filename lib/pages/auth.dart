@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import './homepage.dart';
+import '../dummy_code/initial_page.dart';
+
 class AuthPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,7 +21,9 @@ class AuthPage extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             RawMaterialButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(context, new MaterialPageRoute(builder: (BuildContext context) => MyApp()));
+              },
               child: new Icon(
                 Icons.fingerprint,
                 color: Colors.white,
