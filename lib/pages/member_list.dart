@@ -12,7 +12,9 @@ class MemberListPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-                'Member lists and actions will be displayed here.'),
+              'Member lists and actions will be displayed here.',
+              textAlign: TextAlign.center,
+            ),
           ],
         ),
       ),

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import './current_event.dart';
+import './calendar.dart';
+import './member_list.dart';
+
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
 
@@ -22,15 +26,21 @@ class _HomePageState extends State<HomePage> {
             ),
             ListTile(
               title: Text('Current Event'),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new CurrentEventPage()));
+              },
             ),
             ListTile(
               title: Text('Calendar'),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new CalendarPage()));
+              },
             ),
             ListTile(
               title: Text('Member List'),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new MemberListPage()));
+              },
             ),
           ],
         ),

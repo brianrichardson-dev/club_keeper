@@ -12,7 +12,9 @@ class CurrentEventPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-                'Info and Actions for selected or current event will be listed here.'),
+              'Info and Actions for selected or current event will be listed here.',
+              textAlign: TextAlign.center,
+            ),
           ],
         ),
       ),

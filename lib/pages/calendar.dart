@@ -12,7 +12,9 @@ class CalendarPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-                'Calendar and related actions will be displayed here.'),
+              'Calendar and related actions will be displayed here.',
+              textAlign: TextAlign.center,
+            ),
           ],
         ),
       ),
