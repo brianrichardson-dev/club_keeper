@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import './homepage.dart';
-import '../dummy_code/initial_page.dart';
 
 class AuthPage extends StatelessWidget {
   @override
