@@ -22,7 +22,7 @@ class AuthPage extends StatelessWidget {
             ),
             RawMaterialButton(
               onPressed: () {
-                Navigator.pushReplacement(context, new MaterialPageRoute(builder: (BuildContext context) => MyApp()));
+                Navigator.pushReplacement(context, new MaterialPageRoute(builder: (BuildContext context) => new HomePage(title: 'Club Keeper')));
               },
               child: new Icon(
                 Icons.fingerprint,
