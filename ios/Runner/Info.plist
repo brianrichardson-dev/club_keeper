@@ -41,5 +41,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>Privacy - For user authentication</key>
+	<key>Privacy - For user authentication</key>
 </dict>
 </plist>
