@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 // Following tutorial on this page: https://hackernoon.com/flutter-iii-lists-and-items-6bfa7348ab1b.
 
