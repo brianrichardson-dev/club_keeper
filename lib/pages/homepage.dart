@@ -4,6 +4,9 @@ import './current_event.dart';
 import './calendar.dart';
 import './member_list.dart';
 
+import '../dummy_code/camera_test.dart';
+import '../dummy_code/camera_test_2.dart';
+
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
 
@@ -40,6 +43,12 @@ class _HomePageState extends State<HomePage> {
               title: Text('Member List'),
               onTap: () {
                 Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new MemberListPage()));
+              },
+            ),
+            ListTile(
+              title: Text('Test Page'),
+              onTap: () {
+                Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new CameraScreen()));
               },
             ),
           ],
