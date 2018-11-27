@@ -13,4 +13,9 @@ const kContacts = const <Contact>[
   const Contact(fullName: 'Daisy Duck', email: 'daisy.duck@example.com'),
   const Contact(fullName: 'Elmer Fudd', email: 'elmer.fudd@example.com'),
   const Contact(fullName: 'Porky Pig', email: 'porky.pig@example.com'),
+  const Contact(fullName: 'Yosemite Sam', email: 'y.sam@example.com'),
+  const Contact(fullName: 'Foghorn Leghorn', email: 'f.leghorn@example.com'),
+  const Contact(fullName: 'Wile E Coyote', email: 'w.coyote@example.com'),
+  const Contact(fullName: 'Marvin T Martian', email: 'm.martian@example.com'),
+  const Contact(fullName: 'Pepe Le Pew', email: 'p.pew@example.com'),  
 ];
