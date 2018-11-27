@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 // import './pages/homepage.dart';
 import './pages/auth.dart';
+// import './contact_view.dart';
 
 void main() => runApp(new MyApp());
 
@@ -15,8 +16,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: new HomePage(title: 'Club Keeper'),
       home: AuthPage(),
+      // home: new ContactsPage(),
     );
   }
 }
-
-

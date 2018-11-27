@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../contact_data.dart';
+import 'contact_data.dart';
 
 class _ContactListItem extends StatelessWidget {
   final Contact _contact;
@@ -34,12 +34,12 @@ class ContactList extends StatelessWidget {
   }
 }
 
-class MemberListPage extends StatelessWidget {
+class ContactsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Member List'),
+    return new Scaffold(
+        appBar: new AppBar(
+          title: new Text("Contacts"),
         ),
         body: new ContactList(kContacts));
   }
