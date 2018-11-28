@@ -9,12 +9,27 @@ class _ContactListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new ListTile(
-        leading: new CircleAvatar(child: new Text(_contact.fullName[0])),
+    checkAvatar () {
+      if (_contact.imageUrl != null) {
+        return new CircleAvatar(backgroundImage: NetworkImage(_contact.imageUrl));
+      }  else {
+        return new CircleAvatar(child: new Text(_contact.fullName[0]));
+      }
+    }
+  return new ListTile(
+        leading: checkAvatar(),
+        // leading: new CircleAvatar(
+        //   if (_contact.imageUrl != null) {
+        //     return backgroundImage: NetworkImage(_contact.imageUrl);
+        //   } else {
+        //     return child: new Text(_contact.fullName[0]);
+        //   }
+        // ),
         title: new Text(_contact.fullName),
         subtitle: new Text(_contact.email));
   }
 }
+
 
 class ContactList extends StatelessWidget {
   final List<Contact> _contacts;
