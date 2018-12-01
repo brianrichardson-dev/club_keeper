@@ -1,6 +1,6 @@
-# club_keeper
+# Club Keeper
 
-Mobile app for Club Keeper.
+Mobile app for Club Keeper 
 
 ## Getting Started
 
